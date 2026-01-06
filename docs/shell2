@@ -1,0 +1,655 @@
+ter 06 jan 2026 13:54:11 
+
+  O problema do banco de dados ...
+  
+    Tive que criar o customers
+    No banco test 
+    Pra poder fazer funcionar
+    
+    Não configurou o workshoptdc
+    Nem a pau
+    Não sei por que
+    Infelizmente
+    
+    E nem o contact também
+    O bicho é teimoso
+    
+    Vou estudar um pouco o anterior
+    Que estava funcionando bem
+    Pra fazer uns testes
+    
+    Depois eu volto 
+    E conto tudo
+    
+  Por enquanto é isso!
+  
+maciel@worknote: node-mongo-crud$ iniciar
+date
+ter 06 jan 2026 11:45:33 -03
+pwd
+/home/maciel/studies/CRUD/luizTools/node-mongo-crud
+ls
+app.js	data   docs	     package.json	public	   routes
+bin	db.js  node_modules  package-lock.json	README.md  views
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ npm start
+
+> node-mongo-crud@0.0.0 start
+> npx nodemon ./bin/www
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+GET / - - ms - -
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+Promise { <pending> }
+Promise { <pending> }
+GET / 200 6.991 ms - 223
+GET /stylesheets/style.css 304 2.207 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+workshoptdc
+Promise { <pending> }
+GET / 304 67.052 ms - -
+GET /stylesheets/style.css 304 2.214 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+workshoptdc
+Promise { <pending> }
+[]
+GET / 304 90.231 ms - -
+GET /stylesheets/style.css 304 1.853 ms - -
+Promise { <pending> }
+[]
+GET / 304 5.541 ms - -
+GET /stylesheets/style.css 304 1.187 ms - -
+^C
+maciel@worknote: node-mongo-crud$ npm start
+
+> node-mongo-crud@0.0.0 start
+> npx nodemon ./bin/www
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+contact
+Promise { <pending> }
+[]
+GET / 304 60.343 ms - -
+GET /stylesheets/style.css 304 1.755 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  override existing env vars with { override: true }
+Promise { <pending> }
+[]
+GET / 304 85.229 ms - -
+GET /stylesheets/style.css 304 1.913 ms - -
+Promise { <pending> }
+[]
+GET / 304 6.700 ms - -
+GET /stylesheets/style.css 304 0.997 ms - -
+Promise { <pending> }
+[]
+GET / 304 7.074 ms - -
+GET /stylesheets/style.css 304 0.965 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+Promise { <pending> }
+[]
+GET / 304 93.173 ms - -
+GET /stylesheets/style.css 304 2.842 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+[]
+GET / 304 88.700 ms - -
+GET /stylesheets/style.css 304 3.181 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+GET / 304 56.136 ms - -
+GET /stylesheets/style.css 304 1.901 ms - -
+GET / 304 4.570 ms - -
+GET /stylesheets/style.css 304 0.546 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+GET / 304 75.656 ms - -
+GET /stylesheets/style.css 304 2.715 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+Promise { <pending> }
+GET / 304 62.057 ms - -
+GET /stylesheets/style.css 304 1.647 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+Promise { <pending> }
+GET / 200 97.767 ms - 268
+GET /stylesheets/style.css 304 3.804 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+GET / 304 54.068 ms - -
+GET /stylesheets/style.css 304 1.949 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+contact
+GET / 304 57.621 ms - -
+GET /stylesheets/style.css 304 1.639 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+GET / 304 64.589 ms - -
+GET /stylesheets/style.css 304 1.631 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  override existing env vars with { override: true }
+GET / 500 75.031 ms - 449
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+undefined
+GET / 500 52.013 ms - 432
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  override existing env vars with { override: true }
+undefined
+GET / 500 52.742 ms - 1859
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+contact
+GET / 200 82.525 ms - 268
+GET /stylesheets/style.css 304 3.458 ms - -
+^C
+maciel@worknote: node-mongo-crud$ ^C
+maciel@worknote: node-mongo-crud$ finalizar
+total 112
+drwxr-xr-x 10 maciel maciel  4096 jan  6 13:49 .
+drwxrwxr-x  5 maciel maciel  4096 jan  6 11:44 ..
+-rw-rw-r--  1 maciel maciel  1053 jan  5 21:18 app.js
+drwxr-xr-x  2 maciel maciel  4096 jan  5 23:33 bin
+drwxrwxr-x  4 maciel maciel  4096 jan  6 01:27 data
+-rw-rw-r--  1 maciel maciel   586 jan  6 13:49 db.js
+drwxrwxr-x  4 maciel maciel  4096 jan  6 13:16 docs
+-rw-rw-r--  1 maciel maciel    60 jan  6 12:10 .env
+drwxr-xr-x  8 maciel maciel  4096 jan  6 12:54 .git
+-rw-r--r--  1 maciel maciel    66 jan  5 22:06 .gitattributes
+-rw-rw-r--  1 maciel maciel   940 jan  5 23:34 .gitignore
+drwxrwxr-x 93 maciel maciel  4096 jan  5 23:29 node_modules
+-rw-rw-r--  1 maciel maciel   359 jan  6 00:12 package.json
+-rw-rw-r--  1 maciel maciel 41263 jan  5 23:29 package-lock.json
+drwxr-xr-x  5 maciel maciel  4096 jan  5 21:18 public
+-rw-r--r--  1 maciel maciel    76 jan  5 21:49 README.md
+drwxr-xr-x  2 maciel maciel  4096 jan  6 12:28 routes
+drwxr-xr-x  2 maciel maciel  4096 jan  6 00:25 views
+/home/maciel/studies/CRUD/luizTools/node-mongo-crud
+ter 06 jan 2026 13:51:31 -03
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ # Está realmente muito complicada ...
+maciel@worknote: node-mongo-crud$ # Essa questão do banco de dados.
+maciel@worknote: node-mongo-crud$ # Fiz tudo o que eu podia pra tentar entender.
+maciel@worknote: node-mongo-crud$ # E possivelmente solucionar o problema.
+maciel@worknote: node-mongo-crud$ # Infelizmente, não consegui.
+maciel@worknote: node-mongo-crud$ # Mas vou continuar tentando.
+maciel@worknote: node-mongo-crud$ # Sempre!
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+  
+  Vou estudar!

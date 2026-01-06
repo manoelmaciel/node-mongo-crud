@@ -9,16 +9,16 @@ async function connect() {
 	await client.connect();
 
 	singleton = client.db(process.env.MONG0_DATABASE);
-	// console.log(process.env.MONGO_DATABASE);
+	console.log(process.env.MONGO_DATABASE);
 	return singleton;
 }
 
-const COLLECTION = "contacts";
+const COLLECTION = "customers";
 
 async function findAll() {
 	const db = await connect();
 	// console.log(db);
-	// await console.log(db.collection(COLLECTION).find().toArray());
+	// console.log(db.collection(COLLECTION).find().toArray());
 	return db.collection(COLLECTION).find().toArray();
 }
 
