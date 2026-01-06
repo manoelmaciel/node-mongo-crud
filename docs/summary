@@ -1,0 +1,18 @@
+seg 05 jan 2026 21:02:58 
+
+  Tutorial CRUD em Node.js com driver nativo do MongoDB
+  https://www.luiztools.com.br/post/tutorial-crud-em-node-js-com-driver-nativo-do-mongodb/
+  
+  Reiniciando do zero ...
+  
+    Digitarei todos os códigos.
+    
+  Quero aprender mesmo!
+
+  CRUD (Create, Retrieve, Update e Delete)
+  
+  #1 – Configurando o Node.js
+  
+       npm install -g https://github.com/luiztools/express-generator.git
+       
+       express --git node-mongo-crud

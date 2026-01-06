@@ -1,0 +1,112 @@
+seg 05 jan 2026 21:13:15 
+
+  Criação da pasta Docs ,,.
+  
+maciel@worknote: luizTools$ newDocs 
+date
+seg 05 jan 2026 21:02:38 -03
+pwd
+/home/maciel/studies/CRUD/luizTools
+ls -la
+total 20
+drwxrwxr-x 5 maciel maciel 4096 jan  5 21:02 .
+drwxrwxr-x 4 maciel maciel 4096 jan  2 19:20 ..
+drwxrwxr-x 2 maciel maciel 4096 jan  5 21:02 docs
+drwx------ 8 maciel maciel 4096 jan  4 13:42 node-mongo-crud_doLuiz
+drwxr-xr-x 9 maciel maciel 4096 jan  5 20:38 node-mongo-crud_Ok_Bom-o-bastante
+maciel@worknote: luizTools$ 
+(xed:21149): Gtk-CRITICAL **: 21:04:47.813: gtk_notebook_get_tab_label: assertion 'list != NULL' failed
+
+maciel@worknote: luizTools$ # criação da pasta Docs
+maciel@worknote: luizTools$ 
+maciel@worknote: luizTools$ 
+
+  Bom o bastante!
+  -----------------------------------------------------------------------------------------------------------
+
+_________________________________________________________________________________  
+seg 05 jan 2026 21:21:27 
+
+  #1 – Configurando o Node.js ...
+
+maciel@worknote: luizTools$ iniciar
+date
+seg 05 jan 2026 21:14:02 -03
+pwd
+/home/maciel/studies/CRUD/luizTools
+ls
+docs  node-mongo-crud_doLuiz  node-mongo-crud_Ok_Bom-o-bastante
+maciel@worknote: luizTools$ ls -la
+total 20
+drwxrwxr-x 5 maciel maciel 4096 jan  5 21:02 .
+drwxrwxr-x 4 maciel maciel 4096 jan  2 19:20 ..
+drwxrwxr-x 2 maciel maciel 4096 jan  5 21:13 docs
+drwx------ 8 maciel maciel 4096 jan  4 13:42 node-mongo-crud_doLuiz
+drwxr-xr-x 9 maciel maciel 4096 jan  5 20:38 node-mongo-crud_Ok_Bom-o-bastante
+maciel@worknote: luizTools$ 
+maciel@worknote: luizTools$ 
+maciel@worknote: luizTools$ #1 – Configurando o Node.js
+maciel@worknote: luizTools$ 
+maciel@worknote: luizTools$ express --git node-mongo-crud
+
+   create : node-mongo-crud/
+   create : node-mongo-crud/public/
+   create : node-mongo-crud/public/javascript/
+   create : node-mongo-crud/public/images/
+   create : node-mongo-crud/public/stylesheets/
+   create : node-mongo-crud/public/stylesheets/style.css
+   create : node-mongo-crud/routes/
+   create : node-mongo-crud/routes/index.js
+   create : node-mongo-crud/routes/users.js
+   create : node-mongo-crud/views/
+   create : node-mongo-crud/views/error.ejs
+   create : node-mongo-crud/views/index.ejs
+   create : node-mongo-crud/.gitignore
+   create : node-mongo-crud/app.js
+   create : node-mongo-crud/package.json
+   create : node-mongo-crud/bin/
+   create : node-mongo-crud/bin/www
+
+   change directory:
+     $ cd node-mongo-crud
+
+   install dependencies:
+     $ npm install
+
+   run the app:
+     $ DEBUG=node-mongo-crud:* npm start
+
+maciel@worknote: luizTools$ ls -la
+total 24
+drwxrwxr-x 6 maciel maciel 4096 jan  5 21:18 .
+drwxrwxr-x 4 maciel maciel 4096 jan  2 19:20 ..
+drwxrwxr-x 2 maciel maciel 4096 jan  5 21:16 docs
+drwxr-xr-x 6 maciel maciel 4096 jan  5 21:18 node-mongo-crud
+drwx------ 8 maciel maciel 4096 jan  4 13:42 node-mongo-crud_doLuiz
+drwxr-xr-x 9 maciel maciel 4096 jan  5 20:38 node-mongo-crud_Ok_Bom-o-bastante
+maciel@worknote: luizTools$ 
+maciel@worknote: luizTools$ 
+maciel@worknote: luizTools$ cd node-mongo-crud
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ npm install
+
+added 82 packages, and audited 83 packages in 5s
+
+22 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ DEBUG=node-mongo-crud:* npm start
+
+> node-mongo-crud@0.0.0 start
+> node ./bin/www
+
+  node-mongo-crud:server Listening on port 3000 +0ms
+
+  Bom o bastante!
+  -----------------------------------------------------------------------------------------  
+
+  
