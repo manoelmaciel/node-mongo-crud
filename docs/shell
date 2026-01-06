@@ -108,5 +108,1255 @@ maciel@worknote: node-mongo-crud$ DEBUG=node-mongo-crud:* npm start
 
   Bom o bastante!
   -----------------------------------------------------------------------------------------  
+___________________________________________________________________________________________
+ter 06 jan 2026 00:59:54 
 
+  Uns bugs brabos ...
+
+maciel@worknote: node-mongo-crud$ iniciar
+date
+seg 05 jan 2026 22:34:32 -03
+pwd
+/home/maciel/studies/CRUD/luizTools/node-mongo-crud
+ls
+app.js	docs	      package.json	 public     routes
+bin	node_modules  package-lock.json  README.md  views
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ mongosh
+Current Mongosh Log ID:	695c6add895ec989678de665
+Connecting to:		mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.10
+Using MongoDB:		7.0.28
+Using Mongosh:		2.5.10
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2026-01-05T22:51:55.077-03:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2026-01-05T22:51:55.720-03:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+   2026-01-05T22:51:55.720-03:00: This server is bound to localhost. Remote systems will be unable to connect to this server. Start the server with --bind_ip <address> to specify which IP addresses it should serve responses from, or with --bind_ip_all to bind to all interfaces. If this behavior is desired, start the server with --bind_ip 127.0.0.1 to disable this warning
+   2026-01-05T22:51:55.720-03:00: Soft rlimits for open file descriptors too low
+------
+
+test> show databases;
+admin    8.00 KiB
+config  12.00 KiB
+local    8.00 KiB
+test> 
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+test> 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ date
+seg 05 jan 2026 23:28:09 -03
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ npm install mongodb dotenv
+
+added 13 packages, and audited 96 packages in 7s
+
+23 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+maciel@worknote: node-mongo-crud$ npm start
+
+> node-mongo-crud@0.0.0 start
+> npx nodemon ./bin/www
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+/home/maciel/studies/CRUD/luizTools/node-mongo-crud/routes/index.js:8
+    const docs = await db.findAll();
+                 ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at wrapSafe (node:internal/modules/cjs/loader:1666:18)
+    at Module._compile (node:internal/modules/cjs/loader:1708:20)
+    at Object..js (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/home/maciel/studies/CRUD/luizTools/node-mongo-crud/app.js:7:21)
+
+Node.js v23.11.0
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  override existing env vars with { override: true }
+GET / 200 87.253 ms - 200
+GET /stylesheets/style.css 304 3.684 ms - -
+GET / 200 5.484 ms - 225
+GET /stylesheets/style.css 304 0.553 ms - -
+GET / 200 5.961 ms - 223
+GET /stylesheets/style.css 304 1.038 ms - -
+GET /userlist 404 2.848 ms - 1086
+GET / 304 3.796 ms - -
+GET /stylesheets/style.css 304 1.335 ms - -
+GET / 304 3.668 ms - -
+GET /stylesheets/style.css 304 0.562 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+Promise { <pending> }
+GET / 304 60.877 ms - -
+GET /stylesheets/style.css 304 2.377 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+Promise { <pending> }
+GET / 304 61.843 ms - -
+GET /stylesheets/style.css 304 2.095 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+Promise { <pending> }
+GET / 304 62.554 ms - -
+GET /stylesheets/style.css 304 2.667 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+Promise { <pending> }
+GET / 304 69.750 ms - -
+GET /stylesheets/style.css 304 2.696 ms - -
+^C
+maciel@worknote: node-mongo-crud$ ^C
+maciel@worknote: node-mongo-crud$ finalizar
+total 112
+drwxr-xr-x 10 maciel maciel  4096 jan  6 00:56 .
+drwxrwxr-x  6 maciel maciel  4096 jan  5 22:09 ..
+-rw-rw-r--  1 maciel maciel  1053 jan  5 21:18 app.js
+drwxr-xr-x  2 maciel maciel  4096 jan  5 23:33 bin
+drwxrwxr-x  4 maciel maciel  4096 jan  6 00:57 data
+-rw-rw-r--  1 maciel maciel   569 jan  6 00:56 db.js
+drwxrwxr-x  4 maciel maciel  4096 jan  6 00:13 docs
+-rw-rw-r--  1 maciel maciel    64 jan  5 23:35 .env
+drwxr-xr-x  8 maciel maciel  4096 jan  5 22:11 .git
+-rw-r--r--  1 maciel maciel    66 jan  5 22:06 .gitattributes
+-rw-rw-r--  1 maciel maciel   940 jan  5 23:34 .gitignore
+drwxrwxr-x 93 maciel maciel  4096 jan  5 23:29 node_modules
+-rw-rw-r--  1 maciel maciel   359 jan  6 00:12 package.json
+-rw-rw-r--  1 maciel maciel 41263 jan  5 23:29 package-lock.json
+drwxr-xr-x  5 maciel maciel  4096 jan  5 21:18 public
+-rw-r--r--  1 maciel maciel    76 jan  5 21:49 README.md
+drwxr-xr-x  2 maciel maciel  4096 jan  6 00:16 routes
+drwxr-xr-x  2 maciel maciel  4096 jan  6 00:25 views
+/home/maciel/studies/CRUD/luizTools/node-mongo-crud
+ter 06 jan 2026 00:58:08 -03
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ # deu bug brabo ...
+maciel@worknote: node-mongo-crud$ # não trouxe ninguém do banco!
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ # estou tentando resolver!!!
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+
+  Mas vou tentar resolver!
+  ---------------------------------------------------------------------
+_______________________________________________________________________
+ter 06 jan 2026 01:23:00 
+
+  Bugou feio agora ...
   
+    O Mongo 
+
+maciel@worknote: node-mongo-crud$ mongosh
+Current Mongosh Log ID:	695c8ab4f40a28825e8de665
+Connecting to:		mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.10
+Using MongoDB:		7.0.28
+Using Mongosh:		2.5.10
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2026-01-05T22:51:55.077-03:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2026-01-05T22:51:55.720-03:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+   2026-01-05T22:51:55.720-03:00: This server is bound to localhost. Remote systems will be unable to connect to this server. Start the server with --bind_ip <address> to specify which IP addresses it should serve responses from, or with --bind_ip_all to bind to all interfaces. If this behavior is desired, start the server with --bind_ip 127.0.0.1 to disable this warning
+   2026-01-05T22:51:55.720-03:00: Soft rlimits for open file descriptors too low
+------
+
+test> show databases;
+admin         40.00 KiB
+config       108.00 KiB
+local         40.00 KiB
+workshoptdc   40.00 KiB
+test> use workshoptdc
+switched to db workshoptdc
+workshoptdc> show tables;
+customers
+workshoptdc> show databases;
+admin         40.00 KiB
+config       108.00 KiB
+local         40.00 KiB
+workshoptdc   40.00 KiB
+workshoptdc> 
+
+workshoptdc> db.customers.find()
+[
+  {
+    _id: ObjectId('695c6dbb8b506fa68e6722df'),
+    name: 'Maciel',
+    age: 65
+  }
+]
+workshoptdc> use test
+switched to db test
+test> 
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+test> 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ npm start
+
+> node-mongo-crud@0.0.0 start
+> npx nodemon ./bin/www
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (2) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+Promise { <pending> }
+GET / 200 73.329 ms - 268
+GET /stylesheets/style.css 304 2.639 ms - -
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+Promise { <pending> }
+GET / 304 10.710 ms - -
+GET /stylesheets/style.css 304 0.661 ms - -
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+Promise { <pending> }
+GET / 304 6.944 ms - -
+GET /stylesheets/style.css 304 0.983 ms - -
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+Promise { <pending> }
+GET / 304 6.832 ms - -
+GET /stylesheets/style.css 304 0.681 ms - -
+Db {
+  s: {
+    options: {
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryWrites: true
+    },
+    readPreference: ReadPreference {
+      mode: 'primary',
+      tags: undefined,
+      hedge: undefined,
+      maxStalenessSeconds: undefined
+    },
+    bsonOptions: {
+      raw: false,
+      useBigInt64: false,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      ignoreUndefined: false,
+      bsonRegExp: false,
+      serializeFunctions: false,
+      fieldsAsRaw: {},
+      enableUtf8Validation: true
+    },
+    pkFactory: { createPk: [Function: createPk] },
+    readConcern: undefined,
+    writeConcern: undefined,
+    namespace: MongoDBNamespace { db: 'test', collection: undefined }
+  },
+  client: <ref *1> MongoClient {
+    _events: [Object: null prototype] { error: [Function: noop] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    driverInfoList: [ {} ],
+    options: [Object: null prototype] {
+      hosts: [Array],
+      autoSelectFamily: true,
+      compressors: [Array],
+      connectTimeoutMS: 30000,
+      directConnection: false,
+      driverInfo: {},
+      enableUtf8Validation: true,
+      forceServerObjectId: false,
+      heartbeatFrequencyMS: 10000,
+      loadBalanced: false,
+      localThresholdMS: 15,
+      maxConnecting: 2,
+      maxIdleTimeMS: 0,
+      maxPoolSize: 100,
+      minPoolSize: 0,
+      minHeartbeatFrequencyMS: 500,
+      monitorCommands: false,
+      noDelay: true,
+      pkFactory: [Object],
+      raw: false,
+      readPreference: [ReadPreference],
+      retryReads: true,
+      retryWrites: true,
+      serverMonitoringMode: 'auto',
+      serverSelectionTimeoutMS: 30000,
+      socketTimeoutMS: 0,
+      srvMaxHosts: 0,
+      srvServiceName: 'mongodb',
+      waitQueueTimeoutMS: 0,
+      zlibCompressionLevel: 0,
+      dbName: 'test',
+      userSpecifiedAuthSource: false,
+      userSpecifiedReplicaSet: false,
+      mongoLoggerOptions: [Object],
+      metadata: [Promise]
+    },
+    mongoLogger: undefined,
+    s: {
+      url: 'mongodb://127.0.0.1:27017',
+      bsonOptions: [Object],
+      namespace: [MongoDBNamespace],
+      hasBeenClosed: false,
+      sessionPool: [ServerSessionPool],
+      activeSessions: Set(0) {},
+      activeCursors: Set(0) {},
+      authProviders: [MongoClientAuthProviders],
+      options: [Getter],
+      readConcern: [Getter],
+      writeConcern: [Getter],
+      readPreference: [Getter],
+      isMongoClient: [Getter]
+    },
+    topology: Topology {
+      _events: [Object: null prototype],
+      _eventsCount: 26,
+      _maxListeners: undefined,
+      client: [Circular *1],
+      waitQueue: [List],
+      s: [Object],
+      mongoLogger: undefined,
+      component: 'topology',
+      connectionLock: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    connectionLock: undefined,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+Promise { <pending> }
+GET / 304 8.914 ms - -
+GET /stylesheets/style.css 304 0.751 ms - -
+^C
+maciel@worknote: node-mongo-crud$ ^C
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ finalizar
+total 116
+drwxr-xr-x 10 maciel maciel  4096 jan  6 01:17 .
+drwxrwxr-x  6 maciel maciel  4096 jan  5 22:09 ..
+-rw-rw-r--  1 maciel maciel  1053 jan  5 21:18 app.js
+drwxr-xr-x  2 maciel maciel  4096 jan  5 23:33 bin
+drwxrwxr-x  4 maciel maciel  4096 jan  6 01:20 data
+-rw-rw-r--  1 maciel maciel   569 jan  6 00:56 db.js
+-rw-------  1 maciel maciel   150 jan  6 01:17 .db.js.kate-swp
+drwxrwxr-x  4 maciel maciel  4096 jan  6 01:07 docs
+-rw-rw-r--  1 maciel maciel    64 jan  5 23:35 .env
+drwxr-xr-x  8 maciel maciel  4096 jan  5 22:11 .git
+-rw-r--r--  1 maciel maciel    66 jan  5 22:06 .gitattributes
+-rw-rw-r--  1 maciel maciel   940 jan  5 23:34 .gitignore
+drwxrwxr-x 93 maciel maciel  4096 jan  5 23:29 node_modules
+-rw-rw-r--  1 maciel maciel   359 jan  6 00:12 package.json
+-rw-rw-r--  1 maciel maciel 41263 jan  5 23:29 package-lock.json
+drwxr-xr-x  5 maciel maciel  4096 jan  5 21:18 public
+-rw-r--r--  1 maciel maciel    76 jan  5 21:49 README.md
+drwxr-xr-x  2 maciel maciel  4096 jan  6 00:16 routes
+drwxr-xr-x  2 maciel maciel  4096 jan  6 00:25 views
+/home/maciel/studies/CRUD/luizTools/node-mongo-crud
+ter 06 jan 2026 01:21:15 -03
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ # consegui descobrir o erro ...
+maciel@worknote: node-mongo-crud$ # mas não sei o motivo dele ocorrer!
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ # Tá puxado!!!
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+
+  Tá puxado!!!
+

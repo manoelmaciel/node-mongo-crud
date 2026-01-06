@@ -16,3 +16,56 @@ seg 05 jan 2026 21:02:58
        npm install -g https://github.com/luiztools/express-generator.git
        
        express --git node-mongo-crud
+       
+       
+  #2 – Configurando o MongoDB
+  
+       systemctl start/status/stop mongod
+       
+       /usr/bin/mongod --dbpath /home/maciel/studies/CRUD/luizTools/node-mongo-crud/data
+       
+       Inserindo dados pelo Compass
+       
+         {
+          "name": "Luiz",
+          "age": 35
+         }
+ 
+
+  #3 – Conectando no MongoDB com Node
+
+       npm install mongodb dotenv
+       
+       require("dotenv").config();
+       
+       Vá no arquivo bin/www e adicione essa linha bem no topo:
+       
+         MONGO_HOST=mongodb://127.0.0.1:27017
+         MONGO_DATABASE=workshoptdc
+         
+       Abra seu navegador, acesse http://localhost:3000/userlist e maravilhe-se com o resultado.
+       
+         Não foi nada disso ...
+         
+             Deu tudo errado.
+         
+         Kkkkkkkk!     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
