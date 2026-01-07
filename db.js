@@ -8,11 +8,11 @@ async function connect() {
 	const client = new MongoClient(process.env.MONGO_HOST);
 	await client.connect();
 
-	singleton = client.db(process.env.MONGO_DATABASE);
+	singleton = client.db(process.env.MONGO_DATABASE); // aqui foi o bug (MONG0_DATABASE) com zero em vez de O maiúsculo
 	return singleton;
 }
 
-const COLLECTION = "contacts";
+const COLLECTION = "customers";
 
 async function findAll() {
 	const db = await connect();
