@@ -8,17 +8,14 @@ async function connect() {
 	const client = new MongoClient(process.env.MONGO_HOST);
 	await client.connect();
 
-	singleton = client.db(process.env.MONG0_DATABASE);
-	console.log(process.env.MONGO_DATABASE);
+	singleton = client.db(process.env.MONGO_DATABASE);
 	return singleton;
 }
 
-const COLLECTION = "customers";
+const COLLECTION = "contacts";
 
 async function findAll() {
 	const db = await connect();
-	// console.log(db);
-	// console.log(db.collection(COLLECTION).find().toArray());
 	return db.collection(COLLECTION).find().toArray();
 }
 
