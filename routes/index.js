@@ -13,7 +13,8 @@ router.get('/', async (req, res, next) => {
 });
 
 router.get('/new', (req, res, next) => {
-  res.render('new', { title: 'Novo Cadastro'});
+  res.render('new', { title: 'Novo Cadastro', doc: {"name": "", "age": ""},
+    action: '/new' });
 });
 
 router.post('/new', async (req, res, next) => {
@@ -25,6 +26,31 @@ router.post('/new', async (req, res, next) => {
     res.redirect('/');
   } catch (err) {
     next(err);
+  }
+});
+
+router.get('/edit/:id', async (req, res, next) => {
+  const id = req.params.id;
+  try {
+    const doc = await db.findOne(id);
+    console.log("doc._id: ", doc._id);
+    res.render('new', { title: 'Edição de Cliente', doc, action: '/edit/' + doc._id });
+  } catch (err) {
+    next(err)
+  }
+});
+
+router.post('/edit/:id', async (req, res, next) => {
+  const id = req.params.id;
+  console.log("Id do post: ", id);
+  const name = req.body.name;
+  const age = parseInt(req.body.age);
+  try {
+    const result = await db.update(id, { name, age });
+    console.log("Result: ", result);
+    res.redirect('/');
+  } catch (err) {
+    next(err)
   }
 });
 

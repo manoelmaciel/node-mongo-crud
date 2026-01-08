@@ -23,4 +23,15 @@ async function insert(customer) {
   return db.collection(COLLECTION).insertOne(customer);
 }
 
-module.exports = { findAll, insert }
+async function findOne(id) {
+  const db = await connect();
+  return db.collection(COLLECTION).findOne({_id: ObjectId.createFromHexString(id)});
+}
+
+async function update(id, customer) {
+  const db = await connect();
+  return db.collection(COLLECTION).updateOne({ _id: ObjectId.createFromHexString(id) },
+    { $set: customer });
+}
+
+module.exports = { findAll, insert, findOne, update }
