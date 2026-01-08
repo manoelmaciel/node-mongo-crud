@@ -1,0 +1,323 @@
+qui 08 jan 2026 00:29:43 
+
+  Já está atualizando os clientes ...
+  
+maciel@worknote: node-mongo-crud$ iniciar
+date
+qua 07 jan 2026 18:52:20 -03
+pwd
+/home/maciel/studies/CRUD/luizTools/node-mongo-crud
+ls
+app.js	db.js	      package.json	 README.md
+bin	docs	      package-lock.json  routes
+data	node_modules  public		 views
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ npm start
+
+> node-mongo-crud@0.0.0 start
+> npx nodemon ./bin/www
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+GET /users 304 75.170 ms - -
+GET /stylesheets/style.css 304 2.557 ms - -
+GET / 304 9.875 ms - -
+GET /stylesheets/style.css 304 1.083 ms - -
+GET /add 304 5.185 ms - -
+GET /stylesheets/style.css 304 0.940 ms - -
+maciel@worknote: node-mongo-crud$ DEBUG=node-mongo-crud:* npm start
+ 
+> node-mongo-crud@0.0.0 start
+> npx nodemon ./bin/www
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+  node-mongo-crud:server Listening on port 3002 +0ms
+GET /add 200 64.425 ms - 237
+GET /stylesheets/style.css 304 2.607 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+  node-mongo-crud:server Listening on port 3002 +0ms
+GET /add 200 70.891 ms - 284
+GET /stylesheets/style.css 304 1.712 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+  node-mongo-crud:server Listening on port 3002 +0ms
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+  node-mongo-crud:server Listening on port 3002 +0ms
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+  node-mongo-crud:server Listening on port 3002 +0ms
+GET /new 200 12.348 ms - 390
+GET /stylesheets/style.css 304 2.184 ms - -
+POST /new 404 38.334 ms - 1086
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+  node-mongo-crud:server Listening on port 3002 +0ms
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+  node-mongo-crud:server Listening on port 3002 +0ms
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+  node-mongo-crud:server Listening on port 3002 +0ms
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+  node-mongo-crud:server Listening on port 3002 +0ms
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+  node-mongo-crud:server Listening on port 3002 +0ms
+{
+  acknowledged: true,
+  insertedId: new ObjectId('695ef3f4fca69fbd7365fde4')
+}
+POST /new 302 108.835 ms - 30
+GET / 200 16.945 ms - 317
+GET /stylesheets/style.css 304 3.098 ms - -
+GET / 200 3.968 ms - 374
+GET /stylesheets/style.css 304 1.134 ms - -
+GET /new 200 1.472 ms - 390
+GET /stylesheets/style.css 304 0.884 ms - -
+{
+  acknowledged: true,
+  insertedId: new ObjectId('695ef4c3fca69fbd7365fde5')
+}
+POST /new 302 6.204 ms - 30
+GET / 200 6.576 ms - 425
+GET /stylesheets/style.css 304 0.882 ms - -
+GET / 500 9.107 ms - 1811
+GET / 200 3.264 ms - 542
+GET /stylesheets/style.css 304 0.627 ms - -
+GET /edit/ 404 4.215 ms - 1086
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+  node-mongo-crud:server Listening on port 3002 +0ms
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+  node-mongo-crud:server Listening on port 3002 +0ms
+GET / 304 80.157 ms - -
+GET /stylesheets/style.css 304 1.991 ms - -
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+  node-mongo-crud:server Listening on port 3002 +0ms
+GET / 304 87.786 ms - -
+GET /stylesheets/style.css 304 2.226 ms - -
+GET /edit/ 404 4.753 ms - 1086
+GET /edit/ 404 3.889 ms - 1086
+GET / 304 3.693 ms - -
+GET /stylesheets/style.css 304 0.625 ms - -
+GET /edit/ 404 1.850 ms - 1086
+GET / 200 7.461 ms - 620
+GET /stylesheets/style.css 304 1.944 ms - -
+GET /edit/695ef3f4fca69fbd7365fde4 200 4.236 ms - 416
+GET /stylesheets/style.css 304 0.553 ms - -
+GET /edit/695ef3f4fca69fbd7365fde4 200 3.190 ms - 454
+GET /stylesheets/style.css 304 0.502 ms - -
+POST /edit/695ef3f4fca69fbd7365fde4: 404 26.963 ms - 1086
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+  node-mongo-crud:server Listening on port 3002 +0ms
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+  node-mongo-crud:server Listening on port 3002 +0ms
+POST /edit/695ef3f4fca69fbd7365fde4: 500 23.398 ms - 1156
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+  node-mongo-crud:server Listening on port 3002 +0ms
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+  node-mongo-crud:server Listening on port 3002 +0ms
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  override existing env vars with { override: true }
+  node-mongo-crud:server Listening on port 3002 +0ms
+POST /edit/695ef3f4fca69fbd7365fde4: 500 68.116 ms - 493
+GET /new 200 9.145 ms - 408
+GET /edit/695c6dbb8b506fa68e6722df 200 20.491 ms - 454
+GET /stylesheets/style.css 304 3.339 ms - -
+POST /edit/695c6dbb8b506fa68e6722df: 500 7.225 ms - 493
+GET / 304 8.658 ms - -
+GET /stylesheets/style.css 304 0.705 ms - -
+GET /edit/695ef4c3fca69fbd7365fde5 200 6.937 ms - 460
+GET /stylesheets/style.css 304 1.354 ms - -
+POST /edit/695ef4c3fca69fbd7365fde5: 500 3.525 ms - 493
+GET /edit/695c6dbb8b506fa68e6722df 304 3.327 ms - -
+GET /stylesheets/style.css 304 0.841 ms - -
+POST /edit/695c6dbb8b506fa68e6722df: 500 2.240 ms - 493
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+  node-mongo-crud:server Listening on port 3002 +0ms
+POST /edit/695c6dbb8b506fa68e6722df: 500 97.758 ms - 249
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+  node-mongo-crud:server Listening on port 3002 +0ms
+POST /edit/695c6dbb8b506fa68e6722df: 404 42.415 ms - 1086
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  override existing env vars with { override: true }
+  node-mongo-crud:server Listening on port 3002 +0ms
+POST /edit/695c6dbb8b506fa68e6722df: 500 61.980 ms - 493
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+  node-mongo-crud:server Listening on port 3002 +0ms
+POST /edit/695c6dbb8b506fa68e6722df: 500 59.880 ms - 493
+new ObjectId('695c6dbb8b506fa68e6722df')
+GET /edit/695c6dbb8b506fa68e6722df 304 18.087 ms - -
+GET /stylesheets/style.css 304 1.493 ms - -
+POST /edit/695c6dbb8b506fa68e6722df: 500 2.647 ms - 493
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+  node-mongo-crud:server Listening on port 3002 +0ms
+new ObjectId('695ef4c3fca69fbd7365fde5')
+GET /edit/695ef4c3fca69fbd7365fde5 304 58.381 ms - -
+GET /stylesheets/style.css 304 2.107 ms - -
+695ef4c3fca69fbd7365fde5:
+POST /edit/695ef4c3fca69fbd7365fde5: 500 15.780 ms - 493
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+  node-mongo-crud:server Listening on port 3002 +0ms
+GET / 304 94.804 ms - -
+GET /stylesheets/style.css 304 1.590 ms - -
+new ObjectId('695ef4c3fca69fbd7365fde5')
+GET /edit/695ef4c3fca69fbd7365fde5 304 10.498 ms - -
+GET /stylesheets/style.css 304 0.804 ms - -
+Id do post:  695ef4c3fca69fbd7365fde5:
+POST /edit/695ef4c3fca69fbd7365fde5: 500 13.637 ms - 493
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+  node-mongo-crud:server Listening on port 3002 +0ms
+doc._id:  new ObjectId('695ef4c3fca69fbd7365fde5')
+GET /edit/695ef4c3fca69fbd7365fde5 304 70.010 ms - -
+GET /stylesheets/style.css 304 1.827 ms - -
+Id do post:  695ef4c3fca69fbd7365fde5:
+POST /edit/695ef4c3fca69fbd7365fde5: 500 31.585 ms - 493
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+  node-mongo-crud:server Listening on port 3002 +0ms
+Id do post:  695ef4c3fca69fbd7365fde5:
+POST /edit/695ef4c3fca69fbd7365fde5: 500 63.009 ms - 493
+doc._id:  new ObjectId('695ef3f4fca69fbd7365fde4')
+GET /edit/695ef3f4fca69fbd7365fde4 200 28.766 ms - 455
+GET /stylesheets/style.css 304 2.888 ms - -
+Id do post:  :695ef3f4fca69fbd7365fde4:
+POST /edit/:695ef3f4fca69fbd7365fde4: 500 6.922 ms - 493
+Id do post:  :695ef3f4fca69fbd7365fde4:
+POST /edit/:695ef3f4fca69fbd7365fde4: 500 2.461 ms - 493
+Id do post:  :695ef3f4fca69fbd7365fde4:
+POST /edit/:695ef3f4fca69fbd7365fde4: 500 2.513 ms - 493
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+  node-mongo-crud:server Listening on port 3002 +0ms
+doc._id:  new ObjectId('695ef3f4fca69fbd7365fde4')
+GET /edit/695ef3f4fca69fbd7365fde4 200 60.727 ms - 454
+GET /stylesheets/style.css 304 2.514 ms - -
+GET / 304 7.252 ms - -
+GET /stylesheets/style.css 304 0.672 ms - -
+doc._id:  new ObjectId('695c6dbb8b506fa68e6722df')
+GET /edit/695c6dbb8b506fa68e6722df 200 5.932 ms - 454
+GET /stylesheets/style.css 304 0.672 ms - -
+Id do post:  :695c6dbb8b506fa68e6722df
+POST /edit/:695c6dbb8b506fa68e6722df 500 27.357 ms - 493
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./bin/www`
+[dotenv@17.2.3] injecting env (3) from .env -- tip: ⚙️  override existing env vars with { override: true }
+  node-mongo-crud:server Listening on port 3002 +0ms
+doc._id:  new ObjectId('695c6dbb8b506fa68e6722df')
+GET /edit/695c6dbb8b506fa68e6722df 200 80.548 ms - 453
+GET /stylesheets/style.css 304 1.904 ms - -
+Id do post:  695c6dbb8b506fa68e6722df
+Result:  {
+  acknowledged: true,
+  modifiedCount: 1,
+  upsertedId: null,
+  upsertedCount: 0,
+  matchedCount: 1
+}
+POST /edit/695c6dbb8b506fa68e6722df 302 28.238 ms - 30
+GET / 200 8.702 ms - 622
+GET /stylesheets/style.css 304 0.886 ms - -
+doc._id:  new ObjectId('695c6dbb8b506fa68e6722df')
+GET /edit/695c6dbb8b506fa68e6722df 200 6.454 ms - 455
+GET /stylesheets/style.css 304 0.979 ms - -
+Id do post:  695c6dbb8b506fa68e6722df
+Result:  {
+  acknowledged: true,
+  modifiedCount: 1,
+  upsertedId: null,
+  upsertedCount: 0,
+  matchedCount: 1
+}
+POST /edit/695c6dbb8b506fa68e6722df 302 5.831 ms - 30
+GET / 200 5.990 ms - 620
+GET /stylesheets/style.css 304 0.819 ms - -
+^C
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ finalizar
+total 120
+drwxr-xr-x 10 maciel maciel  4096 jan  8 00:20 .
+drwxrwxr-x  6 maciel maciel  4096 jan  7 13:59 ..
+-rw-rw-r--  1 maciel maciel  1124 jan  7 00:43 app.js
+drwxr-xr-x  2 maciel maciel  4096 jan  5 23:33 bin
+drwxrwxr-x  4 maciel maciel  4096 jan  8 00:28 data
+-rw-rw-r--  1 maciel maciel  1006 jan  8 00:20 db.js
+drwxrwxr-x  4 maciel maciel  4096 jan  7 21:08 docs
+-rw-rw-r--  1 maciel maciel    76 jan  7 19:05 .env
+drwxr-xr-x  8 maciel maciel  4096 jan  8 00:25 .git
+-rw-r--r--  1 maciel maciel    66 jan  5 22:06 .gitattributes
+-rw-rw-r--  1 maciel maciel   940 jan  5 23:34 .gitignore
+-rw-r--r--  1 maciel maciel    11 jan  7 20:15 .kateproject.notes
+drwxrwxr-x 93 maciel maciel  4096 jan  5 23:29 node_modules
+-rw-rw-r--  1 maciel maciel   359 jan  6 00:12 package.json
+-rw-rw-r--  1 maciel maciel 41263 jan  5 23:29 package-lock.json
+drwxr-xr-x  5 maciel maciel  4096 jan  5 21:18 public
+-rw-r--r--  1 maciel maciel   277 jan  7 19:14 README.md
+-rw-------  1 maciel maciel    74 jan  7 20:11 .README.md.kate-swp
+drwxr-xr-x  2 maciel maciel  4096 jan  8 00:22 routes
+drwxr-xr-x  2 maciel maciel  4096 jan  8 00:19 views
+/home/maciel/studies/CRUD/luizTools/node-mongo-crud
+qui 08 jan 2026 00:28:20 -03
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ # Ok ... 
+maciel@worknote: node-mongo-crud$ # Bom o bastante!
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+maciel@worknote: node-mongo-crud$ 
+
+  O estudo está andando bem!
+  
+    

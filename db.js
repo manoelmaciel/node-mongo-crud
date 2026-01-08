@@ -32,6 +32,12 @@ async function update(id, customer) {
   const db = await connect();
   return db.collection(COLLECTION).updateOne({ _id: ObjectId.createFromHexString(id) },
     { $set: customer });
+        
 }
 
-module.exports = { findAll, insert, findOne, update }
+async function deleteOne(id) {
+	const db = await connect();
+	return db.collection(COLLECTION).deleteOne({ _id: ObjectId.createFromHexString(id) });
+}
+
+module.exports = { findAll, insert, findOne, update, deleteOne }
