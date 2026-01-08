@@ -1,6 +1,7 @@
 const { MongoClient, ObjectId } = require("mongodb");
 
 let singleton;
+const COLLECTION = "customers";
 
 async function connect() {
 	if(singleton) return singleton;
@@ -12,11 +13,14 @@ async function connect() {
 	return singleton;
 }
 
-const COLLECTION = "customers";
-
 async function findAll() {
 	const db = await connect();
 	return db.collection(COLLECTION).find().toArray();
 }
 
-module.exports = { findAll }
+async function insert(customer) {
+	const db = await connect();
+  return db.collection(COLLECTION).insertOne(customer);
+}
+
+module.exports = { findAll, insert }
